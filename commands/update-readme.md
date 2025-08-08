@@ -15,7 +15,7 @@ description: Update the README.md file to include design documentation based on 
 - GitHub Actions の workflow で定義されているビルド内容のまとめ
 - 品質保証
 
-ドキュメントの先頭には、AI による自動生成であることを明記してください（`Claude`という単語は使わないでください）。
+ドキュメントの先頭には、AI による自動生成であることを明記してください（`Claude`という単語は含めないでください）。
 既存のドキュメント内容に間違いがある場合は適切に更新してください。
 有用性の低い記述内容が見つかった場合は、確認後に削除してください。
 記述フォーマットは GitHub Flavored Markdown spec に従い、表や mermaid による図を適宜使用し、簡潔に分かりやすくまとめてください。
