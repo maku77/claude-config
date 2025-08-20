@@ -13,7 +13,8 @@ Configuration files for Claude Code
 PowerShell を開き、以下のコマンドを実行してください：
 
 ```powershell
-cmd /c mklink /J "$HOME\.claude\commands\maku" "$THIS_REPO\commands"
+cd claude-config
+cmd /c mklink /J "$HOME\.claude\commands\maku" "$PWD\commands"
 ```
 
 ### macOS / Linux (シンボリックリンクを使用)
@@ -21,7 +22,8 @@ cmd /c mklink /J "$HOME\.claude\commands\maku" "$THIS_REPO\commands"
 ターミナルで以下のコマンドを実行してください：
 
 ```bash
-ln -s $THIS_REPO/commands ~/.claude/commands/maku
+cd claude-config
+ln -s $PWD/commands ~/.claude/commands/maku
 ```
 
 `$THIS_REPO` はこのリポジトリを `git clone` したパスに置き換えてください。
@@ -35,4 +37,3 @@ Claude Code を起動して、`/maku:hello` というスラッシュコマンド
 
 ⏺ てすと、てすと
 ```
-
