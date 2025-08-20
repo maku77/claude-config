@@ -24,6 +24,8 @@ Do not include additional Co-Authors or metadata in the commit message like the 
 Co-Authored-By: Claude <noreply@anthropic.com>
 ```
 
+After committing, display the latest commit message using `git log HEAD...HEAD~1`.
+
 ## Additional instructions
 
 $ARGUMENTS
