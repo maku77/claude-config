@@ -12,10 +12,7 @@ description: "Generate an appropriate git commit message based on the current co
 
 ## Your task
 
-Based on the above diff, generate a suitable git commit message
-following a conventional format (e.g., Conventional Commits),
-and execute a single git commit using that message.
-
+Based on the above diff, generate a suitable git commit message following a conventional format (e.g., Conventional Commits), and execute a single git commit using that message.
 Do not include additional Co-Authors or metadata in the commit message like the following (behave as if `"includeCoAuthoredBy": false` is set):
 
 ```
@@ -23,6 +20,13 @@ Do not include additional Co-Authors or metadata in the commit message like the 
 
 Co-Authored-By: Claude <noreply@anthropic.com>
 ```
+
+## Commit message format
+
+- Use the format: `type: description`
+- `type` should be one of the conventional commit types (e.g., `feat`, `fix`, `docs`, `style`, `refactor`, `test`, etc.)
+- `type` is optional and can be omitted if not applicable
+- `description` should be a concise summary of the changes made
 
 After committing, display the latest commit message using `git log HEAD...HEAD~1 --stat`.
 

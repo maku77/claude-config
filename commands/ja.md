@@ -18,6 +18,6 @@ $ARGUMENTS
   - If the input text contains unnatural English, provide a corrected version with natural English expressions
   - Japanese translation of the phrase or sentence
 
-Please display responses simply without Markdown formatting.
-Please don't display unnecessary messages at the beginning and end.
+Display responses simply without Markdown formatting.
+Don't display unnecessary messages at the beginning and end.
 
