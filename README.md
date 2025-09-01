@@ -6,7 +6,7 @@ Configuration files for Claude Code
 
 ## セットアップ方法
 
-`commands` ディレクトリを Claude Code の設定ディレクトリにリンクして使用してください。
+`agents`、`commands` ディレクトリを Claude Code の設定ディレクトリにリンクして使用してください。
 
 ### Windows (ジャンクションを使用)
 
@@ -15,6 +15,7 @@ PowerShell を開き、以下のコマンドを実行してください：
 ```powershell
 cd claude-config
 cmd /c mklink /J "$HOME\.claude\commands\maku" "$PWD\commands"
+cmd /c mklink /J "$HOME\.claude\agents\maku" "$PWD\agents"
 ```
 
 ### macOS / Linux (シンボリックリンクを使用)
@@ -24,6 +25,7 @@ cmd /c mklink /J "$HOME\.claude\commands\maku" "$PWD\commands"
 ```bash
 cd claude-config
 ln -s $PWD/commands ~/.claude/commands/maku
+ln -s $PWD/agents ~/.claude/agents/maku
 ```
 
 `$THIS_REPO` はこのリポジトリを `git clone` したパスに置き換えてください。
