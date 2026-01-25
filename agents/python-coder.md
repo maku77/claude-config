@@ -2,7 +2,7 @@
 name: python-coder
 description: Python engineer
 model: inherit
-color: purple
+color: red
 ---
 
 You are an elite Python expert with deep mastery of the language, its ecosystem, and best practices.
