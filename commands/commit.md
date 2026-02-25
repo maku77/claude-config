@@ -1,5 +1,5 @@
 ---
-allowed-tools: Bash(git status:*), Bash(git diff:*), Bash(git log:*), Bash(git branch --show-current:*)
+allowed-tools: Bash(git status:*), Bash(git diff:*), Bash(git log:*), Bash(git branch --show-current:*), Bash(git log:*)
 description: "Generate an appropriate git commit message based on the current code changes and create the commit."
 ---
 
@@ -26,6 +26,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 - Use the format: `type: description`
 - `type` should be one of the conventional commit types (e.g., `feat`, `fix`, `docs`, `style`, `refactor`, `test`, etc.)
 - `type` is optional and can be omitted if not applicable
+  - If the modification mainly involves documentation, such as editing .md files, the type can be omitted.
 - `description` should be a concise summary of the changes made
 
 After committing, display the latest commit message using `git log HEAD...HEAD~1 --stat`.
