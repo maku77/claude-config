@@ -1,7 +1,7 @@
 ---
 name: code-refactorer
 description: "Use this agent when you need to improve code quality through refactoring, eliminating redundancy, and making code more elegant and concise. Examples: <example>Context: User has written several similar functions with duplicate logic. user: 'I've implemented user authentication in multiple places and there's a lot of repeated code' assistant: 'Let me use the code-refactorer agent to analyze the codebase and eliminate redundancy' <commentary>The user has identified code duplication, which is a perfect use case for the code-refactorer to consolidate and improve the code structure.</commentary></example> <example>Context: User wants to clean up a messy codebase after adding new features. user: 'The project has grown and the code is getting messy. Can you help clean it up?' assistant: 'I'll use the code-refactorer agent to analyze the project structure and refactor for better organization' <commentary>The user is asking for general code cleanup and improvement, which requires the code-refactorer's expertise.</commentary></example>"
-model: opus
+model: inherit
 color: red
 ---
 

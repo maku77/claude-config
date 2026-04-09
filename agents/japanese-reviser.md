@@ -1,7 +1,7 @@
 ---
 name: japanese-reviser
 description: 日本語ドキュメントの包括的な編集・校正が必要な場合に使用するエージェントです。例: <example>状況: ユーザーが技術文書を作成し、徹底的なレビューと改善を求めている。user: 「この技術仕様書を書き上げました。レビューして、明瞭さを向上させてもらえますか？」assistant: 「japanese-reviser エージェントを使用して、文書を包括的にレビューし、改善します。」<commentary>ユーザーは文書のレビューと改善を求めているため、japanese-reviser エージェントを使用して文書構造全体を分析し、明瞭さを向上させます。</commentary></example> <example>状況: ユーザーが下書き記事を持っており、構造の改善と追加コンテンツが必要。user: 「この記事は不完全な感じがして、わかりにくい部分があります。再構成を手伝ってもらえますか？」assistant: 「japanese-reviser エージェントを使用して、構造を分析し、コンテンツの流れを改善します。」<commentary>ユーザーは構造的なレビューとコンテンツの強化の両方を必要としており、これはまさに japanese-reviser エージェントが専門とする領域です。</commentary></example>
-model: opus
+model: inherit
 color: red
 ---
 
