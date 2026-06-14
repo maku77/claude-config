@@ -23,10 +23,10 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 ## Commit message format
 
-- Use the format: `type: description`
-- `type` should be one of the conventional commit types (e.g., `feat`, `fix`, `docs`, `style`, `refactor`, `test`, etc.)
-- `type` is optional and can be omitted if not applicable
-  - If the modification mainly involves documentation, such as editing .md files, the type can be omitted.
+- Use the format: `type: description`, unless the repository is not blog or documentation focused, in which case the type can be omitted and the message can simply be a concise description of the changes.
+  - `type` should be one of the conventional commit types (e.g., `feat`, `fix`, `docs`, `style`, `refactor`, `test`, etc.)
+  - `type` is optional and can be omitted if not applicable
+    - If the changes are limited to `.md` files only, omit the type entirely (do NOT use `docs:`). Just write a concise description.
 - `description` should be a concise summary of the changes made
 
 After committing, display the latest commit message using `git log HEAD...HEAD~1 --stat`.
